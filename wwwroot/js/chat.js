@@ -117,7 +117,7 @@ connection.on("ReceiveMessage", function (message, fromUserID) {
     $(body).text(msg);
     $(li).append(header);
     $(li).append(body);
-    $("#messagesList").append(li);
+    $("#messagesList").prepend(li);
 });
 
 connection.start().then(function () {
