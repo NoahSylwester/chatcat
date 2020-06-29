@@ -53,6 +53,7 @@ function updateInvites() {
         `)
         $(row).find(".accept").on("click", function(event) {
             event.preventDefault();
+            groupName = invitedGroupName;
             connection.invoke("AddToGroup", invitedGroupName).catch(function (err) {
                 return console.error(err.toString());
             });
@@ -85,6 +86,7 @@ connection.on("ReceiveInvite", function (fromUserID, invitedGroupName) {
     `)
     $(row).find(".accept").on("click", function(event) {
         event.preventDefault();
+        groupName = invitedGroupName;
         connection.invoke("AddToGroup", invitedGroupName).catch(function (err) {
             return console.error(err.toString());
         });
