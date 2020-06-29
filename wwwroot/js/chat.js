@@ -54,6 +54,7 @@ function updateInvites() {
         $(row).find(".accept").on("click", function(event) {
             event.preventDefault();
             groupName = invitedGroupName;
+            $("#groupNameDisplay").text(groupName);
             connection.invoke("AddToGroup", invitedGroupName).catch(function (err) {
                 return console.error(err.toString());
             });
@@ -87,6 +88,7 @@ connection.on("ReceiveInvite", function (fromUserID, invitedGroupName) {
     $(row).find(".accept").on("click", function(event) {
         event.preventDefault();
         groupName = invitedGroupName;
+        $("#groupNameDisplay").text(groupName);
         connection.invoke("AddToGroup", invitedGroupName).catch(function (err) {
             return console.error(err.toString());
         });
@@ -211,7 +213,4 @@ document.querySelector("#refreshButton").addEventListener("click", function(even
     });
 })
 
-function handleConnectionIDChange(newConnectionID) {
-    connectionID = newConnectionID;
-}
 });
