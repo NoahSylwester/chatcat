@@ -69,3 +69,60 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+#usersOnline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#sendButton {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.2s;
+}
+#sendButton:hover {
+  background-color: rgb(241, 241, 241);
+}
+#messageInput {
+  width: 100%;
+}
+.messageInputBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#messagesList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.chatMessageItem {
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 4px rgb(177, 177, 177);
+  padding: 5px;
+  border-radius: 5px;
+  width: 50%;
+}
+.remoteUserItem {
+  margin-left: 50%;
+}
+.chatMessageHeader {
+  font-size: 0.5rem;
+  color: lightgrey;
+  margin: 0;
+}
+.chatMessageBody {
+  font-size: 1rem;
+  margin: 0;
+}
+.userIDListElement {
+  font-size: 0.5rem;
+  word-wrap: break-word;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.userIDListElement:hover {
+  background-color: rgb(241, 241, 241);
+}

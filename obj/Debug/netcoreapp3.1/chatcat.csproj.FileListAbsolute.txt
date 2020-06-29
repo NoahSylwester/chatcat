@@ -35,4 +35,5 @@
 /Users/miguel/Desktop/code/chatcat/obj/Debug/netcoreapp3.1/chatcat.genruntimeconfig.cache
 /Users/miguel/Desktop/code/chatcat/obj/Debug/netcoreapp3.1/chatcat.csproj.CopyComplete
 /Users/miguel/Desktop/code/chatcat/bin/Debug/netcoreapp3.1/libman.json
-/Users/miguel/Desktop/code/chatcat/obj/Debug/netcoreapp3.1/Razor/Pages/_ChatMessage.cshtml.g.cs
+/Users/miguel/Desktop/code/chatcat/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_ChatMessages.cshtml.g.cs
+/Users/miguel/Desktop/code/chatcat/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_UserIds.cshtml.g.cs
