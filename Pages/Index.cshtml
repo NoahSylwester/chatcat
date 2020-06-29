@@ -1,5 +1,9 @@
 ﻿@page
 <div class="container">
+    <partial name="/Pages/Shared/_CreateRoomModal.cshtml" />
+    <partial name="/Pages/Shared/_InviteUserModal.cshtml" />
+    <partial name="/Pages/Shared/_SeeInvitesModal.cshtml" />
+    <partial name="/Pages/Shared/_InviteDirectModal.cshtml" />
     <div class="row">
         <div class="col-10">
             <div class="row">&nbsp;</div>
@@ -10,7 +14,8 @@
             <div class="row">
                 <div class="col messageInputBox">
                     <div class="col"><input type="text" id="messageInput" /></div>
-                    <div class="col"><input type="button" id="sendButton" value="Send Message" /></div>
+                    <div class="col"><input type="button" id="sendButton" class="catButton" value="send" /></div>
+                    <div><span>in room: </span><span id="groupNameDisplay">none</span></div>
                 </div>
             </div>
             <div class="row">

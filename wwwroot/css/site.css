@@ -73,6 +73,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  max-height: 40vh;
+  overflow: scroll;
 }
 #sendButton {
   padding: 1px 5px;
@@ -82,6 +84,42 @@ body {
 }
 #sendButton:hover {
   background-color: rgb(241, 241, 241);
+}
+#onlineTitle {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 3px;
+}
+.buttonWrapper {
+  text-align: center;
+}
+.catButton {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.2s;
+}
+.catButton:hover {
+  background-color: rgb(241, 241, 241);
+}
+#createRoomButton {
+  margin: 5px;
+  font-size: 0.7rem;
+}
+#inviteDirectButton {
+  margin: 5px;
+  font-size: 0.7rem;
+}
+#seeInvitesButton {
+  margin: 5px;
+  font-size: 0.7rem;
+}
+#refreshButton {
+  margin: 5px;
+  font-size: 0.7rem;
+}
+#createGroupNameInput {
+  width: 100%;
 }
 #messageInput {
   width: 100%;
@@ -94,7 +132,16 @@ body {
 #messagesList {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  max-height: 60vh;
+  overflow: scroll;
+}
+#invitesList {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  max-height: 60vh;
+  overflow: scroll;
 }
 .chatMessageItem {
   margin-bottom: 10px;

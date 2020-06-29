@@ -1,4 +1,24 @@
 <div class="col-2">
-    <h5>online (<span id="usersOnlineCount">0</span>)</h5>
+    <div class="buttonWrapper">
+        <button id="createRoomButton" class="catButton" type="button" data-toggle="modal" data-target="#createRoomModal">
+            create room
+        </button>
+    </div>
+    <div class="buttonWrapper">
+        <button id="inviteDirectButton" class="catButton" type="button" data-toggle="modal" data-target="#inviteDirectModal">
+            invite by ID
+        </button>
+    </div>
+    <div class="buttonWrapper">
+        <button id="seeInvitesButton" class="catButton" type="button" data-toggle="modal" data-target="#seeInvitesModal">
+            see invites (<span id="invitesCount">0</span>)
+        </button>
+    </div>
+    <div>
+        <h5 id="onlineTitle">online (<span id="usersOnlineCount">0</span>)</h5>
+        <div class="buttonWrapper">
+            <button id="refreshButton" class="catButton">refresh</button>
+        </div>
+    </div>
     <ul id="usersOnline"></ul>
 </div>
